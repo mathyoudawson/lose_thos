@@ -1,0 +1,3 @@
+# To recompile rust core for our customer target
+[unstable]
+build-std = ["core", "compiler_builtins"]
