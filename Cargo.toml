@@ -7,3 +7,5 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rlibc = "1.0.0" # for memset memcmp memcpy
+bootloader = "0.9.8"

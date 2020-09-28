@@ -2,5 +2,10 @@
 [unstable]
 build-std = ["core", "compiler_builtins"]
 
+# use our json config as target triple
 [build]
 target = "x86_64-lose_thos.json"
+
+# boot qemu vm on run
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"
